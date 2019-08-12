@@ -1,0 +1,174 @@
+<!DOCTYPE>
+<html lang=pt br>
+	<head>
+		<meta charset=UTF-8/>
+		<style>
+			body{
+				background-color: #1C86EE;
+			}
+			header{
+				font: normal 18pt Arial;
+				color: white;
+				text-align: center;
+				padding: 5px;
+			}
+			
+			section{
+				text-align: center;
+				font: normal 16pt Arial;
+				width: 500px;
+				background-color: white;
+				line-height: 50px;
+				border-radius: 10px;
+				padding: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow: 5px 5px 10px black;
+			}
+			
+			footer{
+				font: normal 10pt Arial;
+				color: white;
+				text-align: center;
+				padding-top: 20px;
+			}
+			
+			#d4{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#d6{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#d8{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#d10{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#d12{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#d20{
+				color: white;
+				font: normal 16pt Arial;
+				background-color: white;
+				width: 50px; 
+				height: 50px; 
+				background: #1C86EE; 
+				box-shadow: 1px 1px 3px black;
+			}
+			
+			#result{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Rolador de Dados</h1>
+		</header>
+		
+		<section>
+			<div id='dados'>
+				<p>
+					<input id="d4" type="button" value="D4" onclick="clicar4()">
+					<input id="d6" type="button" value="D6" onclick="clicar6()">
+					<input id="d8" type="button" value="D8" onclick="clicar8()">
+					<input id="d10" type="button" value="D10" onclick="clicar10()">
+					<input id="d12" type="button" value="D12" onclick="clicar12()">
+					<input id="d20" type="button" value="D20" onclick="clicar20()">
+				</p>
+
+			</div>
+			<br>
+			<div id='result'>
+				Resultado
+			</div>
+		</section>
+		
+		<footer>
+			Desenvolvido por Arthur Bravin Pereira
+		</footer>
+
+		<script>
+			var res = document.getElementById('result')
+			
+			function clicar4(){
+				var r4 = (Math.floor(Math.random() * 4)+1)
+				res.innerHTML = r4
+				res.style.color = 'black'
+			}
+			
+			function clicar6(){
+				var r6 = (Math.floor(Math.random() * 6)+1)
+				res.innerHTML = r6
+				res.style.color = 'black'
+			}
+			
+			function clicar8(){
+				var r8 = (Math.floor(Math.random() * 8)+1)
+				res.innerHTML = r8
+				res.style.color = 'black'
+			}
+			
+			function clicar10(){
+				var r10 = (Math.floor(Math.random() * 10)+1)
+				res.innerHTML = r10
+				res.style.color = 'black'
+			}
+			
+			function clicar12(){
+				var r12 = (Math.floor(Math.random() * 12)+1)
+				res.innerHTML = r12
+				res.style.color = 'black'
+			}
+			
+			function clicar20(){
+				var r20 = (Math.floor(Math.random() * 20)+1)
+				res.innerHTML = r20
+				if (res.innerHTML == '20'){
+					res.style.color = 'red'
+				}
+				else {
+					res.style.color = 'black'
+				}
+			}
+			
+		</script>
+	</body>
+<html>
